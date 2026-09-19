@@ -42,7 +42,7 @@ jobs:
           echo "project_application_id=$PROJECT_APPLICATION_ID" >> $GITHUB_OUTPUT
           echo "owner_id=$OWNER_ID" >> $GITHUB_OUTPUT
           
-      - name: Send repo set up completion notification
+      - name: Send repo set up completion notification 
         run: |
           RESPONSE=$(curl -s \
             -w "\n%{http_code}" \
